@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_page.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        
+        <p style="text-align: center; color: rgb(209, 210, 210); font-size: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Join our community to add details</p>
+        <br>
+        <div class="use_google">
+            <div class="google_icon">
+                <img src="google.png" width="22px" height="22px">
+            </div>
+            <p class="use_google_ac">Use Google Account</p>
+
+        </div>
+        <p style="padding-left: 240px; color: rgb(200, 200, 200); font-size: smaller;">or</p>
+        <form id="loginForm" action="process_login.php" method="post">
+            <div class="txt_field">
+                <input type="text" id="username" name="username" required>
+                <span></span>
+                <label for="username">Username</label>
+            </div>  
+            <div class="txt_field">
+                <input type="password" id="password" name="password" required>
+                <span></span>
+                <label for="password">Password</label>
+            </div>  
+            <input type="submit" class="signup-btn" value="LOGIN">
+        </form>
+    </div>
+
+
+</body>
+</html>

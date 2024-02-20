@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Up</title>
+    <link rel="stylesheet" href="form_page.css">
+</head>
+<body>
+    <div class="container">
+        <header>Fill up your details here:</details></header>
+        <form action="process_form.php" method="post" class="form">
+            <div class="input_box">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="input_box">
+                <label>Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter full name" required>
+            </div>
+
+            <div class="input_box">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Enter email address" required>
+            </div>
+
+            <div class="column">
+                <div class="input_box">
+                    <label>Contact Number</label>
+                    <input type="text" name="contactnumber" placeholder="Enter contact number" required>
+                </div>
+
+                <div class="input_box">
+                    <label>Birth Date</label>
+                    <input type="text" name="birthdate" placeholder="Enter birth date" required>
+                </div>
+            </div>
+
+            <div class="gender_box">
+                <h4>Gender</h4>
+                <div class="gender_option">
+                    <div class="gender">
+                        <input type="radio" id="check_male" name="gender" checked >
+                        <label for="check_male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check_female" name="gender">
+                        <label for="check_female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check_other" name="gender">
+                        <label for="check_other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_box" address>
+                <label>Address</label>
+                <input type="text" name="streetaddress" placeholder="Enter your street address" required>
+                <input type="text" name="city" placeholder="Enter your city" required>
+                <input type="text" name="state" placeholder="Enter your state" required>
+            </div>
+            
+            <button type="submit">Submit</button>
+            
+
+        </form>
+    </div>
+</body>
+</html>

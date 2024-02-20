@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(224, 224, 224);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #0000001a;
+}
+
+.container header{
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    /*text-align:cneter; */
+}
+
+.container .form{
+    margin-top: 30px;
+
+}
+
+.form .input_box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input_box label{
+    color: #333;
+}
+
+.form .input_box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender_box{
+    margin-top: 20px;
+}
+
+.gender_box h4{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender_option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.gender input{
+    accent-color: #707070;
+}
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.address{
+    margin: 20px;
+}
+
+.form button{
+    height: 55px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #989696;
+    transition: all 0.2s ease;
+}
+
+.form button:hover{
+    background-color: #707070
+}
+
+/* for responsive */
+@media  screen and (max-width: 500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender_option, .gender){
+        row-gap: 15px;
+    }
+}
